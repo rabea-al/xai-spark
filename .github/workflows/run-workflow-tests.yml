@@ -12,6 +12,8 @@ jobs:
     env:
       TEST_XIRCUITS: |
         examples/SparkSQLPlotBar.xircuits
+        examples/SparkLinePlot.xircuits
+        examples/SparkLogisticRegressionSample.xircuits
 
     steps:
     - name: Checkout Repository
