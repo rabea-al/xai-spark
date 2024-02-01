@@ -47,15 +47,15 @@ jobs:
 
     - name: Clone Repository
       run: |
-      # as of 1.9, xai_pytorch still lives in the base xircuits installation
-      rm -rf ${{ env.COMPONENT_LIBRARY_PATH }}
-      git clone -b ${{ env.BRANCH_NAME }} https://github.com/${{ github.repository }} ${{ env.COMPONENT_LIBRARY_PATH }}
+        # as of 1.9, xai_pytorch still lives in the base xircuits installation
+        rm -rf ${{ env.COMPONENT_LIBRARY_PATH }}
+        git clone -b ${{ env.BRANCH_NAME }} https://github.com/${{ github.repository }} ${{ env.COMPONENT_LIBRARY_PATH }}
 
     - name: Setup XAI SKLearn Components
       run: |
-      # as of 1.9, xai_sklearn still lives in the base xircuits installation
-      rm -rf xai_sklearn
-      git clone https://github.com/XpressAI/xai-sklearn xai_components/xai_sklearn
+        # as of 1.9, xai_sklearn still lives in the base xircuits installation
+        rm -rf xai_components/xai_sklearn
+        git clone https://github.com/XpressAI/xai-sklearn xai_components/xai_sklearn
 
     - name: Install Component Library
       run: |
