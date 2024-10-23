@@ -1,7 +1,7 @@
 numpy
 pandas
-py4j
-pyspark
+py4j==0.10.9.7
+pyspark==3.5.3
 python-dateutil
 pytz
 six
